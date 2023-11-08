@@ -1,0 +1,23 @@
+.Card {
+    list-style: none;
+    padding: 20px;
+    border-radius: 8px;
+    width: 466px;
+    height: 164px;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Price {
+    color: #2196F3;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}

@@ -1,0 +1,22 @@
+$bg: #2196f3;
+$btn-text: #ffff;
+
+.btn {
+    position: relative;
+    grid-column: 2;
+    align-self: end;
+    bottom: 0;
+    height: 65px;
+    background-color: $bg;
+    border-radius: 8px;
+    border: none;
+    color: $btn-text;
+    cursor: pointer;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    font-size: 18px;
+
+    &:hover {
+        opacity: 1;
+    }
+}

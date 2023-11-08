@@ -1,0 +1,28 @@
+.error {
+    width: 92%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #fff;
+    border-radius: 3px;
+    font-family: 'openSans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.3px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-left: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 15px;
+}
+
+@media (max-width: 767px) {
+    .error {
+        max-width: 80vw;
+        margin: 0 auto;
+
+        & span {
+            text-align: center;
+        }
+    }
+}

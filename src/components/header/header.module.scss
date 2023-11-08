@@ -1,0 +1,49 @@
+.Header-tabs {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.Header-tabs input[type="radio"] {
+    visibility: hidden;
+    position: absolute;
+}
+
+input:checked + .Header__label {
+    background-color: #2196F3;
+    color: white;
+}
+
+.Header__label {
+    margin: 20px 0;
+    display: block;
+    width: 168px;
+    height: 50px;
+    background-color: white;
+    outline: 2px solid #DFE5EC;
+    
+}
+
+.wrap:first-of-type .Header__label {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.wrap:last-of-type .Header__label {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.Header__input-description {
+    display: block;
+    position: relative;
+    transform: translateY(70%);
+}
