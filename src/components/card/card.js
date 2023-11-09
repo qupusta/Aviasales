@@ -1,7 +1,6 @@
 import React from 'react'
 
 import CardOriginInfo from '../card-origin-info/card-origin-info'
-import CardDestinationInfo from '../card-destination-info/card-destination-info'
 
 import classes from './card.module.scss'
 
@@ -22,7 +21,7 @@ const Card = ({ price, carrier, segments }) => {
         <img src={`//pics.avs.io/99/36/${carrier}.png`} alt="logo" />
       </div>
       <CardOriginInfo segments={segments[0]} />
-      <CardDestinationInfo segments={segments[1]} />
+      <CardOriginInfo segments={segments[1]} />
     </li>
   )
 }

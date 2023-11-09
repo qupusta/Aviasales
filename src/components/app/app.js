@@ -44,7 +44,7 @@ const filterTickets = (ticketList, filterList) => {
   filterList.forEach((filter) => {
     const newList = ticketList.filter((ticket) => {
       const { segments } = ticket
-      if (segments[0].stops.length + segments[1].stops.length === filter) {
+      if (segments[0].stops.length === filter || segments[1].stops.length === filter) {
         return true
       }
       return false
