@@ -89,14 +89,10 @@ const App = () => {
   }, [dispatch])
 
   useEffect(() => {
-    let interval
-    clearInterval(interval)
-    interval = setTimeout(() => {
-      if (searchId !== null) {
-        getTickets()
-      }
-    }, 2000)
-  }, [getTickets])
+    if (searchId) {
+      getTickets()
+    }
+  }, [searchId, getTickets])
 
   useEffect(() => {
     const result = sortTickets(filterTickets(ticketList, filter), sort)

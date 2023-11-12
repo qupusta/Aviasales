@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-key */
 import React from 'react'
 import { useSelector } from 'react-redux'
-import uniqueId from 'lodash.uniqueid'
+import { nanoid } from 'nanoid'
 
 import Card from '../card/card'
 import ErrorMessage from '../error-message/error-message'
@@ -32,7 +33,11 @@ const CardList = () => {
   }
 
   const tickets = data.slice(0, ticketCount).map((el) => {
-    return <Card {...el} key={uniqueId()} />
+    return (
+      <li className={classes.Card} key={nanoid()}>
+        <Card {...el} />
+      </li>
+    )
   })
 
   return (

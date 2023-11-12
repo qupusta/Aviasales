@@ -15,14 +15,14 @@ const Card = ({ price, carrier, segments }) => {
     return `${price} Р`
   }
   return (
-    <li className={classes.Card}>
+    <>
       <div className={classes.Top}>
         <span className={classes.Price}>{getCost(price)}</span>
         <img src={`//pics.avs.io/99/36/${carrier}.png`} alt="logo" />
       </div>
       <CardOriginInfo segments={segments[0]} />
       <CardOriginInfo segments={segments[1]} />
-    </li>
+    </>
   )
 }
 
